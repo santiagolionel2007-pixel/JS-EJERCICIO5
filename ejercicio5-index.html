@@ -1,0 +1,13 @@
+<input type="password" id="clave1">
+<input type="password" id="clave2">
+<button onclick="validar()">Validar</button>
+<p id="resultado"></p>
+
+<script>
+function validar() {
+  let c1 = document.getElementById("clave1").value;
+  let c2 = document.getElementById("clave2").value;
+  document.getElementById("resultado").innerText =
+    (c1 === c2) ? "Las claves coinciden ✅" : "Las claves no coinciden ❌";
+}
+</script>
